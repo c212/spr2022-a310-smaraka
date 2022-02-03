@@ -1,0 +1,48 @@
+return [line], width, height, middle 
+
+  5            
+ / \   
+ 4 8   
+/   \  
+3   9_ 
+      \
+     13
+	 
+we are at 5
+
+left self = 4
+
+left self = 3
+line = 3, w = 1, h =1, mid = 0
+
+back to 4
+lines = 3, n = w = 1, p = h = 1, x = mid = 0
+s = 4
+u = 1
+
+back to 5
+left = lines, n = 2, p = 3, x = 1
+now we have to right side
+
+down to 13
+line = 13, w = 2, height = 1, mid = 1
+
+back up to 9
+lines = 13, n = 2, p = 1, x = 1
+s = 9
+u = 1
+
+back up to 8
+lines, 3, 3, 0
+		n p x
+u =1
+s=8
+		
+back up to 5
+left =  lines, n = 2, p = 3, x = 1
+right = lines, m = 4, q = 5, y = 0
+s = 5
+u = 1
+4
+
+
