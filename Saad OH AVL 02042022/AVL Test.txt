@@ -1,0 +1,62 @@
+==========AVL Implementation==========
+Inserting... 2
+1 
+ \
+ 2
+Inserting... 3
+ 2 
+/ \
+1 3
+Inserting... 5
+ 2  
+/ \ 
+1 3 
+   \
+   5
+Inserting... 4
+ 2_  
+/  \ 
+1  4
+  / \
+  3 5
+Inserting... 6
+  _4
+ /  \
+ 2  5
+/ \  \
+1 3  6
+Inserting... 7
+  _4_
+ /   \
+ 2   6
+/ \ / \
+1 3 5 7
+==========DELETE==========
+Deleting... 2
+ _4_
+/   \
+1   6
+ \ / \
+ 3 5 7
+Deleting... 3
+ 4_
+/  \
+1  6
+  / \
+  5 7
+Deleting... 5
+ 4
+/ \
+1 6
+   \
+   7
+Deleting... 4
+ 6
+/ \
+1 7
+Deleting... 6
+1
+ \
+ 7
+Deleting... 7
+1
