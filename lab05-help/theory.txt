@@ -1,0 +1,46 @@
+Implement AVL Trees
+
+Theory:
+
+From the book:
+Looking back at Chap. 6 and the implementation of binary search trees, inserting a
+value into a tree can be written recursively. Inserting into an AVL tree can also be
+implemented recursively. 
+
+This means same implementation of BST which makes sense because in class we discussed AVL is fully balanced BST in a way
+
+
+10.3.8 Maintaining Balance Versus Height
+The two implementations presented in this chapter, the recursive and iterative insert
+algorithms for AVL trees, maintained the balance of each node. As an alternative,
+the height of each node could be maintained. In this case, the height of a leaf node
+is 1. The height of any other node is 1 plus the maximum height of its two subtrees.
+The height of an empty tree or None is 0.
+
+Deleting a value from an AVL tree can be accomplished in the same way as described
+in programming problem 2 from Chap. 6. However, it is necessary to adjust balances
+on the way back from deleting the final leaf node. This can be done either by maintaining a path stack if delete is implemented iteratively or by adjusting balances or heights
+while returning from the recursive calls in a recursive implementation of delete.
+
+
+Approach: Follow Pseudocode from HW02 on AVL Implementation
+Add Depth for balance calculations (from heap given by German)
+Add balance for balance calculations (from book: depthR - depthL)
+
+According to Pseudocode and class and book there are 4 main transformations 1 2 3 and 4
+1:L
+2:RR  
+3:LL
+4:R
+
+depthL - depthR < -1 means right side since anything negative means that right > left (Form 3 and Form 1)
+	then if balance > 0 then 
+	form 3
+	else form 1
+	
+depthL - depthR > 1 means left side (2 and 4)
+	if balance < 0 
+	2
+	else 4
+
+This logic is from class discussion when shown the depth numbers and balance numbers (color coded in my pseudocode)
